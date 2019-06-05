@@ -1,0 +1,40 @@
+
+<nav class="panel">
+    <p class="panel-heading">
+      {{chosenIde | titlecase}} Plugins
+    </p>
+    
+    <div class="panel-block">
+  
+        <table class="table is-fullwidth">
+            <tbody>
+                <tr *ngFor="let plugin of plugins">
+                    <td> <figure class="media-left">
+                        <p class="image is-64x64">
+                          <img src="{{plugin.image}}">
+                        </p>
+                      </figure> 
+                    </td>
+                    
+                    <td>
+                        <div class="content">
+                            <p>
+                              <strong>
+                                <a class="is-hyperlink" href="{{plugin.link}}" target="_blank">{{plugin.name}}</a> </strong>
+                              <br>
+                              {{plugin.description}}</p>
+                          </div>      
+                    </td>
+                  </tr>
+                  
+                    
+            </tbody>
+          </table>
+  
+  
+  
+    </div>
+    
+  
+  </nav>
+  
